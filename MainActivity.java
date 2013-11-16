@@ -1,7 +1,7 @@
 package com.example.proffice_hours;
  
 import java.util.List;
- 
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,17 +20,17 @@ public class MainActivity extends Activity {
          * */
         // Inserting Profs
         Log.d("Insert: ", "Inserting .."); 
-        db.addProf(new Prof("HMC", "CS", "Kuenning", "Olin 1277", "11:30-12, 3-4", "1-2, 5-6", "", "3-4", ""));        
-        db.addProf(new Prof("Scripps", "CS", "BLEH", "Olin 1277", "11:30-12, 3-4", "1-2, 5-6", "", "3-4", ""));        
-        db.addProf(new Prof("HMC", "CS", "Lewis", "Olin 1275", "11:30-12, 3-4", "1-2, 5-6", "4-5", "3-4", ""));        
-        db.addProf(new Prof("HMC", "CS", "Keller", "Olin 1277", "NEVER", "1-2, 5-6", "", "3-4", "12-1"));        
+        db.addProf(new Prof("Ravi", "9100000000"));        
+        db.addProf(new Prof("Srinivas", "9199999999"));
+        db.addProf(new Prof("Tommy", "9522222222"));
+        db.addProf(new Prof("Karthik", "9533333333"));
          
-        // Reading all contacts
-        Log.d("Reading: ", "Reading all contacts.."); 
-        List<Prof> contacts = db.getAllProfs();       
+        // Reading all profs
+        Log.d("Reading: ", "Reading all profs.."); 
+        List<Prof> profs = db.getAllProfs();       
          
-        for (Prof cn : contacts) {
-            String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,School: " + cn.getSchool();
+        for (Prof cn : profs) {
+            String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,Phone: " + cn.getSchool();
                 // Writing Profs to log
         Log.d("Name: ", log);
     }
