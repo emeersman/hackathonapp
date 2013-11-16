@@ -19,6 +19,12 @@ public class Prof {
          
     }
     // constructor
+    public Prof(int id, String name, String school){
+        this._id = id;
+        this._name = name;
+        this._school = school;
+    }
+    // constructor
     public Prof(int id, String school, String department, String name, String location, String monday, String tuesday, 
     		String wednesday, String thursday, String friday){
         this._id = id;
@@ -32,7 +38,11 @@ public class Prof {
         this._thursday = thursday;
         this._friday = friday;
     }
-     
+    // constructor
+    public Prof(String name, String school){
+        this._name = name;
+        this._school = school;
+    }
     // constructor
     public Prof(String school, String department, String name, String location, String monday, String tuesday, 
     		String wednesday, String thursday, String friday){
@@ -75,6 +85,7 @@ public class Prof {
     public void setDepartment(String department){
         this._department = department;
     }
+    
     // getting name
     public String getName(){
         return this._name;
