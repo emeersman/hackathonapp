@@ -20,10 +20,10 @@ public class MainActivity extends Activity {
          * */
         // Inserting Profs
         Log.d("Insert: ", "Inserting .."); 
-        db.addProf(new Prof("Ravi", "HMC"));        
-        db.addProf(new Prof("Srinivas", "Pomona"));
-        db.addProf(new Prof("Tommy", "HMC"));
-        db.addProf(new Prof("Karthik", "Scripps"));
+        db.addProf(new Prof("HMC", "CS", "Kuenning", "Olin 1277", "11:30-12, 3-4", "1-2, 5-6", "", "3-4", ""));        
+        db.addProf(new Prof("Scripps", "CS", "BLEH", "Olin 1277", "11:30-12, 3-4", "1-2, 5-6", "", "3-4", ""));        
+        db.addProf(new Prof("HMC", "CS", "Lewis", "Olin 1275", "11:30-12, 3-4", "1-2, 5-6", "4-5", "3-4", ""));        
+        db.addProf(new Prof("HMC", "CS", "Keller", "Olin 1277", "NEVER", "1-2, 5-6", "", "3-4", "12-1"));        
          
         // Reading all contacts
         Log.d("Reading: ", "Reading all contacts.."); 
