@@ -66,15 +66,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
  
         ContentValues values = new ContentValues();
-        values.put(KEY_SCHOOL, contact.getSchool()); // Prof Name
-        values.put(KEY_DEPT, contact.getDepartment()); // Prof Phone
+        values.put(KEY_SCHOOL, contact.getSchool()); // School Name
+        values.put(KEY_DEPT, contact.getDepartment()); // Department
         values.put(KEY_NAME, contact.getName()); // Prof Name
-        values.put(KEY_LOC, contact.getLocation()); // Prof Phone
-        values.put(KEY_MONDAY, contact.getMonday()); // Prof Name
-        values.put(KEY_TUESDAY, contact.getTuesday()); // Prof Phone
-        values.put(KEY_WEDNESDAY, contact.getWednesday()); // Prof Name
-        values.put(KEY_THURSDAY, contact.getThursday()); // Prof Phone
-        values.put(KEY_FRIDAY, contact.getFriday()); // Prof Name
+        values.put(KEY_LOC, contact.getLocation()); // Prof Office
+        values.put(KEY_MONDAY, contact.getMonday()); // Monday Hours
+        values.put(KEY_TUESDAY, contact.getTuesday()); // Tuesday Hours
+        values.put(KEY_WEDNESDAY, contact.getWednesday()); // Wednesday Hours
+        values.put(KEY_THURSDAY, contact.getThursday()); // Thursday Hours
+        values.put(KEY_FRIDAY, contact.getFriday()); // Friday Hours
         
         // Inserting Row
         db.insert(TABLE_CONTACTS, null, values);
